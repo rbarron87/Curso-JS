@@ -17,7 +17,7 @@ function darDeAltaProducto() {
 
     for (let i = 0; i < productos_id.length; i++) {
         if (productos_id[i]=id) {
-            console.log(`Error: El producto con id ${id} ya existe.`);
+            alert(`Error: El producto con id ${id} ya existe.`);
             return;
         }
     }
@@ -26,7 +26,7 @@ function darDeAltaProducto() {
     productos_id.push(id);
     productos_nombre.push(nombre);
     productos_precio.push(precio);
-    console.log(`Producto con id ${id} dado de alta.`);
+    alert(`Producto con id ${id} dado de alta.`);
 }
 
 // Función para listar todos los productos
