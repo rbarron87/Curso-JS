@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script defer src="../js/main.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Página con Encabezado Lateral</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <a href="../index.html" id="btnInicio">Inicio</a>
+        <a href="./tipologias.html" id="btnTipologia">Tipologias</a>
+        <a href="./proyectos.html" id="btnProyectos">Proyectos</a>
+        <a href="./equipos.html" id="btnEquipos">Equipos</a>
+    </div>
+
+    <div class="content">
+        <h1>Formulario para Agregar Tipologías</h1>
+        <form id="formularioTipologias">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="nombreTipologia"><label for="nombre">Nombre</label></th>
+                        <th><label for="pondDM">Ponderación DM</label></th>
+                        <th><label for="pondDE">Ponderación DE</label></th>
+                        <th><label for="pondIA">Ponderación IA</label></th>
+                        <th><label for="pondEP">Ponderación EP</label></th>
+                        <th><label for="pondPA">Ponderación PA</label></th>
+                        <th><label for="pondBL">Ponderación BL</label></th>
+                        <th><label for="pondAFM">Ponderación AFM</label></th>
+                        <th><label for="pondAFE">Ponderación AFE</label></th>
+                        <th><label for="pondEN">Ponderación EN</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nombreTipologia"><input type="text" id="nombre" name="nombre" placeholder="Escriba nombre de Tipologia" required></td>
+                        <td><input type="number" id="pondDM" name="pondDM" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondDE" name="pondDE" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondIA" name="pondIA" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondEP" name="pondEP" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondPA" name="pondPA" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondBL" name="pondBL" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondAFM" name="pondAFM" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondAFE" name="pondAFE" placeholder="0%" step="1" min="0" max="100" required></td>
+                        <td><input type="number" id="pondEN" name="pondEN" placeholder="0%" step="1" min="0" max="100" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody id="tablaBody">
+                    <!-- Aquí se agregarán dinámicamente las filas -->
+                </tbody>
+            </table>
+        </form>
+
+        <div id="mensaje"></div>
+    </div>
+</body>
+</html>

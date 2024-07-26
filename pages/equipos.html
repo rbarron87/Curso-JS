@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script defer src="../js/main.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Página con Encabezado Lateral</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <a href="../index.html" id="btnInicio">Inicio</a>
+        <a href="./tipologias.html" id="btnTipologia">Tipologias</a>
+        <a href="./proyectos.html" id="btnProyectos">Proyectos</a>
+        <a href="./equipos.html" id="btnEquipos">Equipos</a>
+    </div>
+
+    <div class="content">
+
+        <form id="formularioEquipos">
+            <label for="proyecto">Proyecto</label>
+            <input type="text" id="proyecto" name="proyecto" required>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="tipologia">Tipologia</label>
+            <input type="text" id="tipologia" name="tipologia" required>
+
+            <label for="valorProductivo">Valor Productivo</label>
+            <input type="number" id="valorProductivo" name="valorProductivo" step="1" min="1" required>
+
+            <button type="submit">Agregar Equipo</button>
+        </form>
+
+        <div id="mensaje"></div>
+
+        <h1>Listado de Equipos</h1>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th class="proyectoEquipo">Proyecto</th>
+                    <th class="nombreEquipo">Nombre</th>
+                    <th class="tipologiaEquipo">Tipología</th>
+                    <th>VP DM</th>
+                    <th>VP DE</th>
+                    <th>VP IA</th>
+                    <th>VP EP</th>
+                    <th>VP PA</th>
+                    <th>VP BL</th>
+                    <th>VP AFM</th>
+                    <th>VP AFE</th>
+                    <th>VP EN</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Aquí se agregarán dinámicamente las filas -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

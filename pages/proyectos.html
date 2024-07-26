@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script defer src="../js/main.js"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Página con Encabezado Lateral</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <a href="../index.html" id="btnInicio">Inicio</a>
+        <a href="./tipologias.html" id="btnTipologia">Tipologias</a>
+        <a href="./proyectos.html" id="btnProyectos">Proyectos</a>
+        <a href="./equipos.html" id="btnEquipos">Equipos</a>
+    </div>
+
+    <div class="content">
+        <h1>Proyectos</h1>
+        <form id="formularioProyectos">
+
+            <label for="cliente">Cliente</label>
+            <input type="text" id="cliente" name="cliente" required>
+            
+            <label for="descripcion">Descripcion</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+
+            <button type="submit">Agregar Proyecto</button>
+        </form>
+
+        <div id="mensaje"></div>
+
+        <h1>Listado de Proyectos</h1>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Cliente</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Aquí se agregarán dinámicamente las filas -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
